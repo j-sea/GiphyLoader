@@ -7,14 +7,46 @@
     <title>Giphy Loader</title>
 </head>
 <body>
-    <!-- Display: App Name -->
-    <!-- Display: App Instructions -->
-    <!-- Display Section: Collection of Query Item Buttons -->
-    <!-- Display: Query Item Button -->
-    <!-- Display Form: New Query Item Adder -->
-    <!-- Display: New Query Item Text Input -->
-    <!-- Display: New Query Item Submit Button -->
-    <!-- Display Section: Collection of Query Result Buttons -->
-    <!-- Display: Result Button including Rating -->
+    <header>
+        <!-- Display: App Name -->
+        <h1>Giphy Loader</h1>
+        <!-- Display: App Instructions -->
+        <p>Click any of the buttons containing a topic to reveal images related to it. Click the images to toggle their animations.</p>
+    </header>
+    <main>
+        <!-- Display Section: Collection of Query Item Buttons -->
+        <section id="query-item-buttons">
+            <!-- Display: Query Item Button -->
+            <button>Banana</button>
+            <button>Apple</button>
+            <button>Strawberry</button>
+            <button>Mango</button>
+        </section>
+        <!-- Display Section: New Query Item -->
+        <section id="new-query-item">
+            <!-- Display Section: New Query Item Adder Form -->
+            <form id="new-query-item-form">
+                <!-- Display: New Query Item Text Input -->
+                <input type="text" id="new-query-item-input">
+                <!-- Display: New Query Item Submit Button -->
+                <button type="submit" id="new-query-item-submit-button">Add</button>
+            </form>
+        </section>
+        <!-- Display Section: Collection of Query Result Images -->
+        <section id="query-result-images">
+            <!-- Display: Query Result Item -->
+            <figure class="query-result-item">
+                <!-- Display: Query Result Image -->
+                <img src="" alt="" class="query-result-image">
+                <figcaption>
+                    <!-- Display: Query Result Rating -->
+                    <p><b>Rating:</b> <span class="query-result-rating">G</span></p>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy;</p>
+    </footer>
 </body>
 </html>
