@@ -1,0 +1,89 @@
+body {
+    background-color: darksalmon;
+    text-align: center;
+}
+
+button, img {
+    cursor: pointer;
+}
+
+footer {
+    clear: left;
+}
+
+.topic-item-button {
+    border-radius: 5px;
+    border: thin solid #222;
+    margin: 10px 5px;
+    padding: 5px 10px;
+}
+
+.topic-item-button:hover,
+.topic-item-button:active,
+.topic-item-button:focus {
+    background-color: black;
+    color: white;
+}
+
+.topic-result-item {
+    overflow: hidden;
+    position: relative;
+    animation: fadeIn 2s;
+}
+
+.topic-result-image {
+    box-sizing: border-box;
+    display: block;
+    border: thin solid #222;
+}
+
+.topic-result-item > figcaption {
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0px 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: opacity 1s, top 0.5s;
+}
+
+#new-topic-item-input {
+    border: thin solid #222;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px 10px;
+    border-right-width: 0px;
+}
+
+#new-topic-item-submit-button {
+    border: thin solid #222;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px 10px;
+}
+
+#topic-result-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+    .topic-result-image {
+        width: 100%;
+    }
+}
